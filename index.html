@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h4>Fill information about you and your cinema experience:</h4>
+  <form>
+    <div>
+      <label>
+        <span>Name:</span>
+        <input type="text" id="name" name="userName" placeholder="Введите свое имя" />
+      </label>
+    </div>
+    <div>
+      <label>
+        <span>Birthday:</span>
+        <input type="date" name="birthday" id="userBirthday">
+      </label>
+    </div>
+    <div>
+      <label>
+        <span>Email:</span>
+        <input type="email" id="email" name="userEmail" />
+      </label>
+    </div>
+    <div>
+      <label>
+        <span>Blog:</span>
+        <input type="url" id="url" name="userUrl">
+      </label>
+    </div>
+    <div>
+      <label>
+        <span>Genre:</span>
+        <input type="text" name="genre" id="userGenre" list="genreSuggestions"/>
+          <datalist id="genreSuggestions">
+              <option>Comedy</option>
+              <option>Horror</option>
+              <option>Drama</option>
+              <option>Thriller</option>
+              <option>Science Fiction</option>
+              <option>Fantasy</option>
+          </datalist>
+      </label>
+    </div>
+    <div>
+      <label>
+        <span>How you rate yourself:</span>
+        <input type="number" name="userRating" id="rating" min="1" max="12" step="1">
+      </label>
+    </div>
+    <div>
+      <button type="submit">Send my data</button>
+    </div>
+  </form>
+
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2631.0867821413162!2d37.58542271589992!3d48.74203901684575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40df97046922eca5%3A0x8b3eecd1c404284d!2zItCg0L7QtNC40L3QsCI!5e0!3m2!1sru!2sua!4v1618041192610!5m2!1sru!2sua" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</body>
+</html>
